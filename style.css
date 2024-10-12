@@ -156,7 +156,7 @@ header {
   overflow: hidden;
   .review-list {
     display: flex;
-    animation: carousel 10s infinite;
+    /* animation: carousel 10s infinite; */
   }
 
   .review-card {
@@ -212,11 +212,67 @@ header {
   }
 }
 
+.footer {
+  background-color: #2d140b;
+  opacity: 0.7;
+  color: white;
+  margin-top: 10px;
+
+  .footer-column {
+    margin-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  h1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .footer-column-map {
+    h1 {
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    a {
+      img {
+        height: 30px;
+      }
+
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      display: grid;
+      place-items: center;
+      background-color: white;
+      margin: 20px;
+    }
+  }
+
+  .footer-column-map {
+    img {
+      padding: 20px;
+      width: 100%;
+      max-width: 550px;
+      border-radius: 40px;
+    }
+  }
+}
+
 @media only screen and (min-width: 900px) {
   header {
     .shop-name {
       padding-left: 260px;
     }
+  }
+  .fotter-col-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
   }
 }
 
