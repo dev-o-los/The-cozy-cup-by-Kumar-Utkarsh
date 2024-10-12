@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6e7da;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+
+#icon {
+  cursor: pointer;
+}
+
+#icon:active {
+  cursor: pointer;
+  scale: 0.8;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) ease-in;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  /* background-color: #fff3ef; */
+  padding: 5px 15px 5px 4px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 100;
+
+  .shop-name {
+    font-family: "Pacifico", sans-serif;
+  }
+
+  img {
+    height: 45px;
+  }
+
+  .menu-bar {
+    height: 25px;
+    display: none;
+  }
+
+  .header-items {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.hero-section {
+  position: relative;
+
+  img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: 70vh;
+    padding: 5px 6px;
+    border-radius: 20px;
+    opacity: 0.8;
+    filter: contrast(85%) drop-shadow(2px 2px 5px gray);
+  }
+
+  p {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+  }
+
+  h1 {
+    position: absolute;
+    font-size: 40px;
+    left: 15px;
+    top: 15px;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  header {
+    .shop-name {
+      padding-left: 260px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    .header-items {
+      display: none;
+    }
+    .menu-bar {
+      display: block;
+    }
+  }
+}
