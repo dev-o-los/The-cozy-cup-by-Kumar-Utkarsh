@@ -110,17 +110,27 @@ header {
 }
 
 .menu-section {
+  .menu {
+    padding: 2px;
+    display: grid;
+    place-items: center;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
   .menu-item {
-    margin-left: 100px;
     padding: 5px;
     border-radius: 15px;
     background-color: white;
+    /* filter: drop-shadow(1); */
     max-width: min-content;
+    height: 430px;
+
     img {
       border-radius: 12px;
       height: 300px;
       object-fit: cover;
-      width: 240px;
+      width: 250px;
     }
 
     .item-name {
@@ -129,6 +139,7 @@ header {
       padding: 2px 1px 10px 2px;
     }
     p {
+      text-overflow: ellipsis;
       padding: 2px 1px 6px 2px;
     }
   }
@@ -149,6 +160,17 @@ header {
     }
     .menu-bar {
       display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 511px) {
+  .menu-section {
+    .menu-item {
+      margin: 2px 20px;
+      img {
+        width: 89vw;
+      }
     }
   }
 }
