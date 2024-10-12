@@ -97,7 +97,7 @@ header {
   font-size: clamp(2em, 5vw, 3em);
   display: flex;
   align-items: center;
-  margin: 7px 0px;
+  margin: 17px 0px;
 }
 
 .divider::before,
@@ -153,6 +153,12 @@ header {
 }
 
 .review-section {
+  overflow: hidden;
+  .review-list {
+    display: flex;
+    animation: carousel 10s infinite;
+  }
+
   .review-card {
     background-color: white;
     margin: 6px;
@@ -189,8 +195,10 @@ header {
     }
 
     .rating-wrapper {
-      padding-left: 12px;
+      display: flex;
+      align-items: center;
     }
+
     .review-header {
       display: flex;
       justify-content: space-between;
@@ -199,6 +207,7 @@ header {
 
     p {
       padding: 15px;
+      width: 437px;
     }
   }
 }
@@ -230,5 +239,14 @@ header {
         width: 95vw;
       }
     }
+  }
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
