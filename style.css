@@ -37,7 +37,7 @@ p {
 
 header {
   display: flex;
-  /* background-color: #fff3ef; */
+  background-color: #fff3ef;
   padding: 5px 15px 5px 4px;
   justify-content: space-between;
   align-items: center;
@@ -46,6 +46,7 @@ header {
 
   .shop-name {
     font-family: "Pacifico", sans-serif;
+    padding-left: 60px;
   }
 
   img {
@@ -271,7 +272,7 @@ header {
 @media only screen and (min-width: 900px) {
   header {
     .shop-name {
-      padding-left: 260px;
+      padding-left: 30vw;
     }
   }
   .fotter-col-wrapper {
