@@ -118,6 +118,13 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 
+  .menu-item:hover {
+    scale: 0.95;
+    cursor: pointer;
+    filter: grayscale(85%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 500ms;
+  }
+
   .menu-item {
     padding: 5px;
     border-radius: 15px;
@@ -141,6 +148,57 @@ header {
     p {
       text-overflow: ellipsis;
       padding: 2px 1px 6px 2px;
+    }
+  }
+}
+
+.review-section {
+  .review-card {
+    background-color: white;
+    margin: 6px;
+    border-radius: 20px;
+
+    h4 {
+      font-weight: 500;
+    }
+
+    #profile {
+      height: 80px;
+      margin-left: 10px;
+      margin-top: 10px;
+      padding: 5px;
+      background-color: whitesmoke;
+      border-radius: 100%;
+    }
+
+    #rating-comma {
+      height: 70px;
+      margin-right: 15px;
+      filter: contrast(20%);
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding-top: 3px;
+    }
+
+    img {
+      height: 20px;
+    }
+
+    .rating-wrapper {
+      padding-left: 12px;
+    }
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    p {
+      padding: 15px;
     }
   }
 }
@@ -169,7 +227,7 @@ header {
     .menu-item {
       margin: 2px 20px;
       img {
-        width: 89vw;
+        width: 95vw;
       }
     }
   }
